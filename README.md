@@ -1,97 +1,38 @@
 # DIO Agent na Prática
 
-Desafio de Projeto da [DIO](https://dio.me): configure o [DIO Agent](https://github.com/digitalinnovationone/dio-agent) e use as skills dele para estudar, praticar e planejar a sua carreira.
+Entrega técnica do desafio [DIO Agent na Prática](https://github.com/digitalinnovationone/dio-agent-na-pratica), baseada no [DIO Agent oficial](https://github.com/digitalinnovationone/dio-agent).
 
-## Como fazer
-
-1. Clique em **Use this template** para criar a sua cópia deste repositório.
-2. Siga os passos abaixo, copiando cada prompt para o DIO Agent.
-3. Preencha a seção [Minha entrega](#minha-entrega) e entregue o link da sua cópia na DIO.
-
-## 1. Configure o DIO Agent
-
-- Instale um harness. Recomendamos o [Google Antigravity](https://antigravity.google/docs), mas qualquer um [da lista do DIO Agent](https://github.com/digitalinnovationone/dio-agent#-comece-em-3-passos) funciona.
-- Baixe o [DIO Agent](https://github.com/digitalinnovationone/dio-agent) em **Code**, **Download ZIP**, e extraia.
-- No harness, abra a pasta que tem o arquivo `AGENTS.md` e mande:
-
-```
-Oi!
-Quem é você e como pode me ajudar nos meus estudos na DIO?
-```
-
-Se ele se apresentar como DIO Agent, está tudo certo.
-
-## 2. Estudar
-
-Troque o conceito pelo que você quer entender:
-
-```
-Me explica o que é uma skill de um agente de IA.
-Meu nível: uso IA no dia a dia, mas nunca configurei um agente.
-```
-
-## 3. Praticar
-
-Use um desafio em que você travou ou este exemplo:
-
-```
-Estou travado em um Desafio de Código da DIO.
-O desafio pede a soma de todos os números de 1 até N.
-Meu código imprime só o último número, não a soma:
-let n = parseInt(gets());
-let soma = 0;
-for (let i = 1; i <= n; i++) {
-  soma = i;
-}
-print(soma);
-Me ajuda a destravar sem dar a resposta pronta.
-```
-
-## 4. Planejar
-
-Preencha os colchetes com a sua Trilha:
-
-```
-Quero montar um plano de estudos.
-Trilha: [link do seu Bootcamp ou Formação]
-Objetivo: concluir em [4 semanas].
-Meu nível: [iniciante, intermediário ou avançado].
-Tempo: [1 hora por dia, de segunda a sexta].
-```
-
-## Bônus: seu próximo passo
-
-Se você quer construir com IA:
-
-```
-Quero escolher meu próximo passo na Carreira AI Builder.
-Quero construir: [um app para os pedidos do meu negócio].
-Programação: [nenhuma, o básico ou trabalho com isso].
-Objetivo: [tirar uma ideia do papel].
-```
-
----
+Execução assistida por IA em 22/11/2026. Os quatro momentos são descritos em texto, alternativa permitida no enunciado. Este registro demonstra funcionamento do agente; não afirma aprendizado pessoal, disponibilidade de agenda ou experiência subjetiva do titular.
 
 ## Minha entrega
 
-Edite este README pelo lápis, role até aqui e cole (Ctrl+V) um print de cada passo, sem dados pessoais.
-
 ### Configure
 
-_Cole o print do DIO Agent se apresentando._
+O repositório oficial foi clonado em ambiente local separado. O harness utilizado foi Codex CLI, com sandbox de leitura. O agente respondeu: “Oi! Sou o DIO Agent, seu mentor de tecnologia para os estudos na DIO.” Ofereceu apoio para organizar formações, explicar conceitos e dar dicas graduais.
+
+O executável anterior recusou o modelo configurado. Após autorização específica para trocar somente o modelo do teste, a versão oficial atual do CLI foi executada isoladamente com GPT-6.2-Sol. A configuração permanente foi preservada. A leitura adicional pelo shell interno falhou; os textos oficiais de persona, conhecimento e três skills foram fornecidos integralmente na entrada do teste. Não se afirma que essa leitura adicional automática funcionou.
 
 ### Estudar
 
-_Cole o print da explicação._
+Pedido: explicar uma skill para um perfil de teste que usa IA, mas nunca configurou agente. A resposta definiu skill como guia reutilizável com condições de uso e passos. Usou a analogia de uma receita e o exemplo da skill study-plan. Terminou com uma pergunta de compreensão, mantida em aberto.
 
 ### Praticar
 
-_Cole o print da dica que destravou você._
+Foi usado o exemplo do README base: um laço que deveria somar de 1 até N, mas substitui o acumulador. O agente deu uma dica conceitual sobre preservar o total anterior e uma pergunta de rastreamento. Não entregou código corrigido nem simulou uma resposta humana. O exemplo não é apresentado como dificuldade pessoal real.
 
 ### Planejar
 
-_Cole o print do seu plano de estudos._
+Foi solicitado um plano de exemplo para a Formação Python for Data Analytics, com quatro semanas e cinco sessões semanais de uma hora. Esses horários e nível intermediário são hipóteses de teste. A resposta distribuiu os quatro grupos observados na plataforma: Arquivos e Tratamento de Erros; Bibliotecas e Preparação; Automação e Visualização; Qualidade de Código e Projeto Aplicado. Incluiu prática, revisão e marcos. Distinguiu as 8 horas nominais da formação das 20 horas planejadas.
 
 ### Como foi para você
 
-_Conte em poucas linhas como foi usar o DIO Agent pela primeira vez._
+Relato da execução assistida: houve uma falha real de compatibilidade do executável/modelo e outra na leitura de arquivos pelo shell interno. A versão atual isolada e o fornecimento explícito dos textos oficiais permitiram concluir os quatro casos de teste. O agente produziu explicação, dica gradual e plano coerentes com os dados fornecidos. Perguntas de acompanhamento não foram respondidas em nome de uma pessoa. A percepção pessoal do titular não foi inventada.
+
+## Evidências e reprodução
+
+- [Registro integral das quatro interações](interacoes.md)
+- [Validação e limitações](validacao.md)
+- [Repositório oficial do agente](https://github.com/digitalinnovationone/dio-agent), commit `5f5e11d95583d0eabcd883b214ef0e51bfb8889c`
+- [Template do desafio](https://github.com/digitalinnovationone/dio-agent-na-pratica), commit `b49a41d8356796ca2cbeee9035fcf4adb7ee8d2b`
+
+Para reproduzir, use um harness compatível, abra o repositório oficial e execute os quatro prompts registrados. O resultado de um modelo generativo pode variar. Este repositório foi criado como fork do template, adaptação ao fluxo equivalente de cópia pelo GitHub MCP. Nenhum código de produção, credencial, base pessoal, transcrição de aula ou PDF de terceiros foi incluído.
